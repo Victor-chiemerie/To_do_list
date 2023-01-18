@@ -20,6 +20,9 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
+  optimization: {
+    runtimeChunk: 'single',
+  },
   module: {
     rules: [
       {
