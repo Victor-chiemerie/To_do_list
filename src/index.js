@@ -1,20 +1,40 @@
 import _ from 'lodash';
-import printMe from './print.js';
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
-   const btn = document.createElement('button');
- 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
- 
-   btn.innerHTML = 'Click me and check the console!';
-   btn.onclick = printMe;
- 
-   element.appendChild(btn);
- 
-    return element;
-  }
- 
-  document.body.appendChild(component());
+  let task = [
+    {
+      description: "wash the car",
+      completed: false,
+      index: 0
+    },
+    {
+      description: "sweep the house",
+      completed: false,
+      index: 1
+    },
+    {
+      description: "prepare supper",
+      completed: false,
+      index: 2
+    },
+    {
+      description: "walk the dog",
+      completed: false,
+      index: 3
+    }
+  ];
+
+  const chores = document.querySelector('ul')
+
+  task.forEach(work => {
+    chores.innerHTML += `
+    <li>
+    <div>
+    <input type="checkbox" name="" id="">
+    <div id="list${work.index}">${work.description}</div>
+    </div>
+    <span class="material-symbols-outlined">more_vert</span>
+    </li>
+    `;
+
+  });

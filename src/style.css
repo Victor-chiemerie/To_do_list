@@ -1,7 +1,57 @@
-body {
-    background-color: bisque;
+* {
+    list-style-type: none;
 }
 
-.hello {
-    color: blue;
-  }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 3px 2px rgb(171, 163, 163);
+    margin: 30px;
+    width: 500px;
+}
+
+section, ul li {
+    border-bottom: 0.7px solid rgb(191, 182, 182);
+    padding: 9px 7px;
+    width: -webkit-fill-available;
+}
+
+.to_do {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: -webkit-fill-available;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li div{
+    display: flex;
+    gap: 10px;
+}
+
+.clear_list {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 226, 226);;
+    color: grey;
+}
