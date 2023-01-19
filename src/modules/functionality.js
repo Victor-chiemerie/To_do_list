@@ -26,6 +26,12 @@ export default class functions {
         LocalStorage.saveData(list);
     }
 
+    static editTask = (newDescription, index) => {
+        list = LocalStorage.getData();
+        list[index].description = newDescription;
+        LocalStorage.saveData(list);
+    }
+
     static clearTask = () => {
 
     }
