@@ -188,7 +188,7 @@ Example command:
 ### Run tests
 
 To run tests, run the following command:
-- To check for stylelint errors, run npx stylelint "**/*.css{css,scss}".
+- To check for stylelint errors, run npx stylelint "**/*.{css,scss}"
 - To check for javascript error, run npx eslint .
 
 <!--
