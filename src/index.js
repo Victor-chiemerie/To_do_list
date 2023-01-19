@@ -28,23 +28,27 @@ const printTasks = () => {
 
   list.forEach((work, index) => {
     const removeTask = document.getElementById(`removeTask${work.index}`);
-    removeTask.addEventListener('click', () => {
-      functions.removeTask(index);
-      printTasks();
-    });
+    if (removeTask) {
+      removeTask.addEventListener('click', () => {
+        functions.removeTask(index);
+        printTasks();
+      });
+    }
   });
 
   list.forEach((work, index) => {
     const newInput = document.getElementById(`task${work.index}`);
-    newInput.addEventListener(('keydown'), (event) => {
-      if (event.code === 'Enter') {
-        event.preventDefault();
-        functions.editTask(newInput.value, index);
-        printTasks();
+    if (newInput) {
+      newInput.addEventListener(('keydown'), (event) => {
+        if (event.code === 'Enter') {
+          event.preventDefault();
+          functions.editTask(newInput.value, index);
+          printTasks();
 
-        newInput.value = '';
-      }
-    });
+          newInput.value = '';
+        }
+      });
+    }
   });
 };
 
