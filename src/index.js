@@ -1,39 +1,45 @@
-// import _ from 'lodash';
 import './style.css';
+import Work from './modules/list.js';
 
-const task = [
-  {
-    description: 'wash the car',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'sweep the house',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'prepare supper',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'walk the dog',
-    completed: false,
-    index: 3,
-  },
-];
-
+const newtask = new Work();
 const chores = document.querySelector('ul');
 
-task.forEach((work) => {
-  chores.innerHTML += `
-    <li>
-    <div>
-    <input type="checkbox" name="" id="">
-    <div id="list${work.index}">${work.description}</div>
-    </div>
-    <span class="material-symbols-outlined">more_vert</span>
-    </li>
-    `;
-});
+const printTasks = () => {
+  const list = JSON.parse(localStorage.getItem('list')) || [];
+  let innertext = '';
+  list.forEach((work, i) => {
+    innertext += `
+      <li>
+      <div>
+      <input type="checkbox" name="" id="">
+      <input type="text" name="task" id="task" value="${work.description}">
+      </div>
+      <span id="removeTask${i}" class="material-symbols-outlined">delete</span>
+      </li>
+      `;
+  });
+
+  chores.innerHTML = innertext;
+
+  list.forEach((work, index) => {
+    const removeTask = document.getElementById(`removeTask${work.index}`)
+    removeTask.addEventListener('click', () => {
+      newtask.removeTask(index);
+      printTasks();
+    })
+  })
+}
+
+printTasks();
+
+const task = document.getElementById('task');
+ task.addEventListener(('keydown'), (event) => {
+  if (event.code === "Enter") {
+    event.preventDefault();
+    newtask.addtask(task.value)
+    printTasks();
+
+    task.value = '';
+  }
+ })
+

@@ -21,7 +21,7 @@ body > div {
   width: 100%;
 }
 
-section,
+section, form,
 ul li {
   border-bottom: 0.7px solid rgb(191, 182, 182);
   padding: 10px 0;
@@ -71,6 +71,10 @@ ul li {
   background-color: rgb(231, 226, 226);
   color: grey;
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 786px) {
