@@ -1,11 +1,17 @@
 import './style.css';
-import Work from './modules/list.js';
+import functions from './modules/functionality.js';
+import LocalStorage from './modules/localstorage.js';
 
-const newtask = new Work();
+
 const chores = document.querySelector('ul');
 
 const printTasks = () => {
-  const list = JSON.parse(localStorage.getItem('list')) || [];
+  let list;
+if (LocalStorage.getData() === null) {
+    list = [];
+} else {
+    list = LocalStorage.getData();
+}
   let innertext = '';
   list.forEach((work, i) => {
     innertext += `
@@ -24,7 +30,7 @@ const printTasks = () => {
   list.forEach((work, index) => {
     const removeTask = document.getElementById(`removeTask${work.index}`)
     removeTask.addEventListener('click', () => {
-      newtask.removeTask(index);
+      functions.removeTask(index);
       printTasks();
     })
   })
@@ -36,7 +42,7 @@ const task = document.getElementById('task');
  task.addEventListener(('keydown'), (event) => {
   if (event.code === "Enter") {
     event.preventDefault();
-    newtask.addtask(task.value)
+    functions.addtask(task.value)
     printTasks();
 
     task.value = '';
