@@ -21,7 +21,8 @@ body > div {
   width: 100%;
 }
 
-section, form,
+section,
+form,
 ul li {
   border-bottom: 0.7px solid rgb(191, 182, 182);
   padding: 10px 0;
