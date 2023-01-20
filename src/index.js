@@ -89,3 +89,9 @@ clearCompleted.addEventListener('click', () => {
   functions.clearCompletedtask();
   printTasks();
 })
+
+const refresh = document.querySelector('.refresh')
+refresh.addEventListener('click', () => {
+  window.location.reload();
+  printTasks();
+})
