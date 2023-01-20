@@ -67,8 +67,8 @@ const printTasks = () => {
         functions.markDone(index);
       }
       printTasks();
-    })
-  })
+    });
+  });
 };
 
 printTasks();
@@ -84,14 +84,14 @@ task.addEventListener(('keydown'), (event) => {
   }
 });
 
-const clearCompleted = document.getElementById('clear_completed')
+const clearCompleted = document.getElementById('clear_completed');
 clearCompleted.addEventListener('click', () => {
   functions.clearCompletedtask();
   printTasks();
-})
+});
 
-const refresh = document.querySelector('.refresh')
+const refresh = document.querySelector('.refresh');
 refresh.addEventListener('click', () => {
   window.location.reload();
   printTasks();
-})
+});
