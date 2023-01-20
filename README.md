@@ -105,8 +105,6 @@ After you're finished please remove all the comments and instructions!
 - **[The data is preserved in the browser's memory by using localStorage]**
 - **[Use JavaScript classes instead of objects and arrays]**
 - **[Create class methods to add, remove and edit tasks]**
-- **[Clear all tasks that are marked done by a single click]**
-- **[Strikes through completed tasks]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,6 +234,10 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+
+
+- **[Clear all tasks that are marked done by a single click]**
+- **[Strikes through completed tasks]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
