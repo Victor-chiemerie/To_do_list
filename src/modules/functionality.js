@@ -30,7 +30,4 @@ export default class functions {
       list[index].description = newDescription;
       LocalStorage.saveData(list);
     }
-
-  // static clearTask = () => {
-  // }
 }

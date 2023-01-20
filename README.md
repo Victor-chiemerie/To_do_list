@@ -28,7 +28,6 @@ After you're finished please remove all the comments and instructions!
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   
-  <h3><b>Microverse README Template</b></h3>
 
 </div>
 
@@ -158,7 +157,7 @@ Example commands:
 
 Install this project with:
 - cd my-folder
--  git clone https://github.com/Victor-chiemerie/To_do_list
+-  git clone https://github.com/Victor-chiemerie/To_do_list.git
 
 install npx
 
