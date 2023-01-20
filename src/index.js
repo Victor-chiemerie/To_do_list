@@ -11,12 +11,19 @@ const printTasks = () => {
   } else {
     list = LocalStorage.getData();
   }
+
+  let check = '';
   let innertext = '';
   list.forEach((work, i) => {
+    if (work.completed === false) {
+      check = '';
+    } else {
+      check = 'checked';
+    }
     innertext += `
       <li>
       <div>
-      <input type="checkbox" name="" id="check${i}">
+      <input ${check} type="checkbox" name="" id="check${i}">
       <input type="text" class="strikethrough" id="task${i}" value="${work.description}">
       </div>
       <span id="removeTask${i}" class="material-symbols-outlined">delete</span>
@@ -51,14 +58,17 @@ const printTasks = () => {
     }
   });
 
-  // list.forEach((work, index) => {
-  //   const checker = document.getElementById(`check${index}`);
-  //   checker.addEventListener('change', () => {
-  //     functions.markDone(index);
-  //     console.log(list);
-  //     printTasks();
-  //   })
-  // })
+  list.forEach((work, index) => {
+    const checker = document.getElementById(`check${index}`);
+    checker.addEventListener('change', () => {
+      if (!(checker.checked)) {
+        functions.markUnDone(index);
+      } else {
+        functions.markDone(index);
+      }
+      printTasks();
+    })
+  })
 };
 
 printTasks();

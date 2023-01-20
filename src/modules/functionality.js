@@ -36,6 +36,12 @@ export default class functions {
       LocalStorage.saveData(list);
     }
 
+    static markUnDone = (index) => {
+      list = LocalStorage.getData();
+      list[index].completed = false;
+      LocalStorage.saveData(list);
+    }
+
     static resetIndex = () => {
       list.forEach((item, number) => {
         item.index = number;
