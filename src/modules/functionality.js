@@ -8,6 +8,7 @@ if (LocalStorage.getData() === null) {
   list = LocalStorage.getData();
 }
 export default class functions {
+
     static addtask = (inputTask) => {
       if (inputTask) {
         const newtask = new Work(inputTask);
@@ -36,7 +37,7 @@ export default class functions {
       LocalStorage.saveData(list);
     }
 
-    static markUnDone = (index) => {
+    static UnmarkDone = (index) => {
       list = LocalStorage.getData();
       list[index].completed = false;
       LocalStorage.saveData(list);
@@ -46,5 +47,12 @@ export default class functions {
       list.forEach((item, number) => {
         item.index = number;
       });
+    }
+
+    static clearCompletedtask = () => {
+      list = LocalStorage.getData();
+      list = list.filter((task) => task.completed === false);
+      this.resetIndex();
+      LocalStorage.saveData(list);
     }
 }

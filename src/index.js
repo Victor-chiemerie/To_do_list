@@ -23,7 +23,7 @@ const printTasks = () => {
     innertext += `
       <li>
       <div>
-      <input ${check} type="checkbox" name="" id="check${i}">
+      <input ${check} type="checkbox" class="checkbox" id="check${i}">
       <input type="text" class="strikethrough" id="task${i}" value="${work.description}">
       </div>
       <span id="removeTask${i}" class="material-symbols-outlined">delete</span>
@@ -62,7 +62,7 @@ const printTasks = () => {
     const checker = document.getElementById(`check${index}`);
     checker.addEventListener('change', () => {
       if (!(checker.checked)) {
-        functions.markUnDone(index);
+        functions.UnmarkDone(index);
       } else {
         functions.markDone(index);
       }
@@ -83,3 +83,9 @@ task.addEventListener(('keydown'), (event) => {
     task.value = '';
   }
 });
+
+const clearCompleted = document.getElementById('clear_completed')
+clearCompleted.addEventListener('click', () => {
+  functions.clearCompletedtask();
+  printTasks();
+})

@@ -78,6 +78,18 @@ ul li {
   width: 100%;
 }
 
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+#clear_completed:hover {
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
 }
