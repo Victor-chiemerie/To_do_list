@@ -43,6 +43,10 @@ input {
   border: none;
 }
 
+input[type=checkbox]:checked + input.strikethrough {
+  text-decoration: line-through;
+}
+
 .to_do div,
 .work_input input {
   margin-left: 10px;

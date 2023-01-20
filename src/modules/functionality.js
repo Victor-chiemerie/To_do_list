@@ -12,9 +12,7 @@ export default class functions {
       if (inputTask) {
         const newtask = new Work(inputTask);
         list.push(newtask);
-        list.forEach((item, number) => {
-          item.index = number;
-        });
+        this.resetIndex();
         LocalStorage.saveData(list);
       }
     }
@@ -22,6 +20,7 @@ export default class functions {
     static removeTask = (index) => {
       list = LocalStorage.getData();
       list.splice(index, 1);
+      this.resetIndex();
       LocalStorage.saveData(list);
     }
 
@@ -29,5 +28,17 @@ export default class functions {
       list = LocalStorage.getData();
       list[index].description = newDescription;
       LocalStorage.saveData(list);
+    }
+
+    static markDone = (index) => {
+      list = LocalStorage.getData();
+      list[index].completed = true;
+      LocalStorage.saveData(list);
+    }
+
+    static resetIndex = () => {
+      list.forEach((item, number) => {
+        item.index = number;
+      });
     }
 }

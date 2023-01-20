@@ -16,8 +16,8 @@ const printTasks = () => {
     innertext += `
       <li>
       <div>
-      <input type="checkbox" name="" id="">
-      <input type="text" name="task" id="task${i}" value="${work.description}">
+      <input type="checkbox" name="" id="check${i}">
+      <input type="text" class="strikethrough" id="task${i}" value="${work.description}">
       </div>
       <span id="removeTask${i}" class="material-symbols-outlined">delete</span>
       </li>
@@ -50,6 +50,15 @@ const printTasks = () => {
       });
     }
   });
+
+  // list.forEach((work, index) => {
+  //   const checker = document.getElementById(`check${index}`);
+  //   checker.addEventListener('change', () => {
+  //     functions.markDone(index);
+  //     console.log(list);
+  //     printTasks();
+  //   })
+  // })
 };
 
 printTasks();
