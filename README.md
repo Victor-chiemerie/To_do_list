@@ -28,7 +28,6 @@ After you're finished please remove all the comments and instructions!
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   
-  <h3><b>Microverse README Template</b></h3>
 
 </div>
 
@@ -58,9 +57,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome Books] <a name="about-project"></a>
+# 📖 [To Do List] <a name="about-project"></a>
 
-**[Awesome books]** is a project designed to store, add and delete books;
+**[To Do List]** is a project designed to store, add and delete tasks set to be achieved;
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -75,6 +74,7 @@ After you're finished please remove all the comments and instructions!
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
     <li><a href="#">JavaScript</a></li>
+    <li><a href="#">Webpack</a></li>
   </ul>
 </details>
 
@@ -97,15 +97,14 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 
-- **[Create a collection that keeps a list of books]**
-- **[Create a function to add a new book to the collection]**
-- **[Display all books saved in the collection in the top part of the page]**
-- **[When a user clicks the "Add" button, a new book is added to the collection]**
-- **[When a user clicks the "Remove" button,the correct book is removed from the collection.]**
+- **[Create a collection that keeps a list of Tasks]**
+- **[Create a function to add a new task to the collection]**
+- **[Display all tasks saved in the collection in the top part of the page]**
+- **[When a user inputs a task and clicks the "Enter" key, a new task is added to the collection]**
+- **[When a user clicks the "Delete" icon,the correct task is removed from the collection.]**
 - **[The data is preserved in the browser's memory by using localStorage]**
 - **[Use JavaScript classes instead of objects and arrays]**
-- **[You can use objects and arrays, but do it inside classes]**
-- **[Create class methods to add and remove books]**
+- **[Create class methods to add, remove and edit tasks]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +114,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://donmark2k.github.io/Awesome_books_ES6/)
+- [Live Demo Link](https://github.com/Victor-chiemerie/To_do_list)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +144,7 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/Victor-chiemerie/Awesome_books_ES6
+https://github.com/Victor-chiemerie/To_do_list
 
 Example commands:
 
@@ -158,7 +157,7 @@ Example commands:
 
 Install this project with:
 - cd my-folder
--  git clone https://github.com/Victor-chiemerie/Awesome_books_ES6
+-  git clone https://github.com/Victor-chiemerie/To_do_list.git
 
 install npx
 
@@ -188,7 +187,7 @@ Example command:
 ### Run tests
 
 To run tests, run the following command:
-- To check for stylelint errors, run npx stylelint "**/*.css{css,scss}".
+- To check for stylelint errors, run npx stylelint "**/*.{css,scss}"
 - To check for javascript error, run npx eslint .
 
 <!--
@@ -227,7 +226,7 @@ Example:
 
 - GitHub: [@Bobby](https://github.com/Victor-chiemerie)
 - Twitter: [@Bobby](https://twitter.com/VictorChiemer20)
-- LinkedIn: [@Bobby](https://www.linkedin.com/in/victor-chiemerie-460475246/)
+- LinkedIn: [@Bobby](https://www.linkedin.com/in/victor-nwadinigwe-460475246/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
