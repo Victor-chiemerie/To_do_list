@@ -11,13 +11,20 @@ const printTasks = () => {
   } else {
     list = LocalStorage.getData();
   }
+
+  let check = '';
   let innertext = '';
   list.forEach((work, i) => {
+    if (work.completed === false) {
+      check = '';
+    } else {
+      check = 'checked';
+    }
     innertext += `
       <li>
       <div>
-      <input type="checkbox" name="" id="">
-      <input type="text" name="task" id="task${i}" value="${work.description}">
+      <input ${check} type="checkbox" class="checkbox" id="check${i}">
+      <input type="text" class="strikethrough" id="task${i}" value="${work.description}">
       </div>
       <span id="removeTask${i}" class="material-symbols-outlined">delete</span>
       </li>
@@ -50,6 +57,18 @@ const printTasks = () => {
       });
     }
   });
+
+  list.forEach((work, index) => {
+    const checker = document.getElementById(`check${index}`);
+    checker.addEventListener('change', () => {
+      if (!(checker.checked)) {
+        functions.UnmarkDone(index);
+      } else {
+        functions.markDone(index);
+      }
+      printTasks();
+    });
+  });
 };
 
 printTasks();
@@ -63,4 +82,16 @@ task.addEventListener(('keydown'), (event) => {
 
     task.value = '';
   }
+});
+
+const clearCompleted = document.getElementById('clear_completed');
+clearCompleted.addEventListener('click', () => {
+  functions.clearCompletedtask();
+  printTasks();
+});
+
+const refresh = document.querySelector('.refresh');
+refresh.addEventListener('click', () => {
+  window.location.reload();
+  printTasks();
 });

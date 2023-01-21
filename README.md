@@ -218,11 +218,11 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
- 👤**Chukwuemeka Ochuba**
+ 👤**Nwadinigwe Victor**
 
 - GitHub: [@Bobby](https://github.com/Victor-chiemerie)
 - Twitter: [@Bobby](https://twitter.com/VictorChiemer20)
@@ -234,6 +234,10 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+
+
+- **[Clear all tasks that are marked done by a single click]**
+- **[Strikes through completed tasks]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -252,7 +256,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-[Donmark2k](https://github.com/Donmark2k) has been of tremendous help so far.
+[Donmark2k](https://github.com/Donmark2k) and [Joshua Lyngdoh](https://github.com/joshualyngdoh) has been of tremendous help so far.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

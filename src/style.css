@@ -37,10 +37,19 @@ ul li {
 ul li div {
   display: flex;
   gap: 10px;
+  width: 100%;
 }
 
 input {
   border: none;
+}
+
+input[type=checkbox]:checked + input.strikethrough {
+  text-decoration: line-through;
+}
+
+.strikethrough {
+  width: 100%;
 }
 
 .to_do div,
@@ -72,6 +81,22 @@ ul li {
   background-color: rgb(231, 226, 226);
   color: grey;
   width: 100%;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+#clear_completed:hover {
+  cursor: pointer;
+}
+
+#task {
+  width: 90%;
 }
 
 .hidden {
