@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Victor-chiemerie/Webpack_setup.git"
+    "url": "git+https://github.com/Victor-chiemerie/To_do_list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Victor-chiemerie/Webpack_setup/issues"
+    "url": "https://github.com/Victor-chiemerie/To_do_list/issues"
   },
-  "homepage": "https://github.com/Victor-chiemerie/Webpack_setup#readme",
+  "homepage": "https://github.com/Victor-chiemerie/To_do_list#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
