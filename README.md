@@ -114,7 +114,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://github.com/Victor-chiemerie/To_do_list)
+- [Live Demo Link](https://victor-chiemerie.github.io/To_do_list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
