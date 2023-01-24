@@ -1,5 +1,5 @@
 {
-  "name": "webpack_setup",
+  "name": "to_do_list",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
   "private": true,
@@ -42,5 +42,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }
