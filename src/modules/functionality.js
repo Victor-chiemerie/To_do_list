@@ -8,7 +8,6 @@ if (LocalStorage.getData() === null) {
   list = LocalStorage.getData();
 }
 export default class functions {
-  
     static addtask = (inputTask) => {
       if (inputTask) {
         const newtask = new Work(inputTask);
