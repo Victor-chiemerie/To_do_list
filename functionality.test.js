@@ -16,7 +16,7 @@ describe('functionality methods', () => {
   })
   test('should remove a task', () => {
     functions.removeTask(0);
-    expect({ description: 'second input', completed: false, index: 0});
+    expect(LocalStorage.getData()).toStrictEqual([{ description: 'second input', completed: false, index: 0}]);
   })
 })
 
