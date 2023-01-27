@@ -221,7 +221,7 @@ Example:
 
 - GitHub: [@Alwyn](https://github.com/Thoth1111)
 - Twitter: [@Alwyn](https://twitter.com/Androvelle)
-- LinkedIn: [@Bobby](https://www.linkedin.com/in/alwyn-androvelle-simiyu/)
+- LinkedIn: [@Alwyn](https://www.linkedin.com/in/alwyn-androvelle-simiyu/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

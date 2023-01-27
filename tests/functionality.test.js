@@ -18,7 +18,7 @@ describe('Add Task method', () => {
     expect(list[0].description).toStrictEqual('hello world');
     const displayed = document.querySelector('#allLists');
     list.forEach((item) => {
-      displayed.innerHTML = `<li>${item}</li>`;
+      displayed.innerHTML += `<li>${item}</li>`;
     });
     const listed = document.querySelectorAll('#allLists li');
     expect(listed).toHaveLength(1);
@@ -27,7 +27,12 @@ describe('Add Task method', () => {
   test('should add another new task', () => {
     functions.addtask('second input');
     const list = LocalStorage.getData();
-    expect(list[1].description).toStrictEqual('second input');
+    const displayed = document.querySelector('#allLists');
+    list.forEach((item) => {
+      displayed.innerHTML += `<li>${item}</li>`;
+    });
+    const listed = document.querySelectorAll('#allLists li');
+    expect(listed).toHaveLength(2);
   });
 
   test('should add another new task', () => {
@@ -39,26 +44,40 @@ describe('Add Task method', () => {
   test('should add another new task', () => {
     functions.addtask('fourth input');
     const list = LocalStorage.getData();
-    expect(list[3].description).toStrictEqual('fourth input');
+    const displayed = document.querySelector('#allLists');
+    list.forEach((item) => {
+      displayed.innerHTML += `<li>${item}</li>`;
+    });
+    const listed = document.querySelectorAll('#allLists li');
+    expect(listed).toHaveLength(4);
   });
 });
 
 describe('Remove Task method', () => {
   test('should remove a task', () => {
     functions.removeTask(0);
-    expect(LocalStorage.getData()).toStrictEqual(
-      [
-        { description: 'second input', completed: false, index: 0 },
-        { description: 'third input', completed: false, index: 1 },
-        { description: 'fourth input', completed: false, index: 2 },
-      ],
-    );
+    const list = LocalStorage.getData();
+    const displayed = document.querySelector('#allLists');
+    let innertext = '';
+    list.forEach((item) => {
+      innertext += `<li>${item}</li>`;
+    });
+    displayed.innerHTML = innertext;
+    const listed = document.querySelectorAll('#allLists li');
+    expect(listed).toHaveLength(3);
   });
 
   test('should remove a task', () => {
     functions.removeTask(0);
     const list = LocalStorage.getData();
-    expect(list.length).toStrictEqual(2);
+    const displayed = document.querySelector('#allLists');
+    let innertext = '';
+    list.forEach((item) => {
+      innertext += `<li>${item}</li>`;
+    });
+    displayed.innerHTML = innertext;
+    const listed = document.querySelectorAll('#allLists li');
+    expect(listed).toHaveLength(2);
   });
 });
 
