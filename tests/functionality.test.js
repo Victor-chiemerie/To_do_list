@@ -18,7 +18,7 @@ describe('Add Task method', () => {
     expect(list[0].description).toStrictEqual('hello world');
     const displayed = document.querySelector('#allLists');
     list.forEach((item) => {
-      displayed.innerHTML = `<li>${item}</li>`;
+      displayed.innerHTML += `<li>${item}</li>`;
     });
     const listed = document.querySelectorAll('#allLists li');
     expect(listed).toHaveLength(1);
