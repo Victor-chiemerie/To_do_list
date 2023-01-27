@@ -92,6 +92,14 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
+<details>
+<summary>Testing</summary>
+  <ul>
+    <li><a href="https://jestjs.io/docs/getting-started">jest</a></li>
+    <li><a href="#">linters</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -105,6 +113,9 @@ After you're finished please remove all the comments and instructions!
 - **[The data is preserved in the browser's memory by using localStorage]**
 - **[Use JavaScript classes instead of objects and arrays]**
 - **[Create class methods to add, remove and edit tasks]**
+- **[Clear all tasks that are marked done by a single click]**
+- **[Strikes through completed tasks]**
+- **[Can be tested automatically while development]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,6 +185,8 @@ Example command:
 To run the project, execute the following command:
 - Open the cloned folder on the VS code
 - Open the live server
+- Open a new Terminal
+- Run npm start
 
 
 <!--
@@ -189,6 +202,7 @@ Example command:
 To run tests, run the following command:
 - To check for stylelint errors, run npx stylelint "**/*.{css,scss}"
 - To check for javascript error, run npx eslint .
+- To check for proper working of each function, run npm test .
 
 <!--
 Example command:
@@ -218,7 +232,7 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
@@ -228,6 +242,10 @@ Example:
 - Twitter: [@Bobby](https://twitter.com/VictorChiemer20)
 - LinkedIn: [@Bobby](https://www.linkedin.com/in/victor-nwadinigwe-460475246/)
 
+ 👤**Alwyn A. S.**
+
+- GitHub: [@Alwyn](https://github.com/Thoth1111)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,8 +254,8 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- **[Clear all tasks that are marked done by a single click]**
-- **[Strikes through completed tasks]**
+- **[Mock the HTML elements to test DOM manipulation functions]**
+- **[Use the mock storage object you have created in Part 1 of this project to mock the localStorage updates]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -256,7 +274,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-[Donmark2k](https://github.com/Donmark2k) and [Joshua Lyngdoh](https://github.com/joshualyngdoh) has been of tremendous help so far.
+[Donmark2k](https://github.com/Donmark2k), [Joshua Lyngdoh](https://github.com/joshualyngdoh) and [Alwyn](https://github.com/Thoth1111) has been of tremendous help so far.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
