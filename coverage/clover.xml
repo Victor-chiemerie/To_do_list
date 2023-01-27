@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674818063563" clover="3.2.0">
-  <project timestamp="1674818063563" name="All files">
+<coverage generated="1674821260465" clover="3.2.0">
+  <project timestamp="1674821260465" name="All files">
     <metrics statements="39" coveredstatements="35" conditionals="4" coveredconditionals="2" methods="12" coveredmethods="11" elements="55" coveredelements="48" complexity="0" loc="39" ncloc="39" packages="1" files="3" classes="3"/>
     <file name="functionality.js" path="C:\Users\sharks\Desktop\Thoth-Code-Ke\To_do_list\src\modules\functionality.js">
       <metrics statements="34" coveredstatements="30" conditionals="4" coveredconditionals="2" methods="9" coveredmethods="8"/>
